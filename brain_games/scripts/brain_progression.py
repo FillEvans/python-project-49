@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import prompt
-import random
 from random import randint
 from brain_games.cli import welcome_user
 from brain_games.scripts.brain_games import welcome
@@ -24,9 +23,10 @@ def game_progression():
         answer_1 = prompt.integer('Your answer: ')
         if int(answer) != answer_1:
             return print(
-                f"'{answer_1}' is wrong answer ;(. Correct answer was '{answer}'."
+                f"'{answer_1}' is wrong answer ;(. Correct answer was"
+                f"\'{answer}\'."
                 f"\nLet's try again, {name}!")
-        else: 
+        else:
             print('Correct!')
             good_result += 1
             if good_result == 3:
