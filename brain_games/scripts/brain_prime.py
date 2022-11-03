@@ -23,33 +23,27 @@ def is_prime(n):
         return False
 
 
-def prime():
+def game_is_prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     good_result = 0
     while True:
         primer = randint(1, 100)
         print(f'Question: {primer}')
         answer = prompt.string('Your answer: ')
-        if is_prime(primer):
-            if answer != 'yes':
-                print(f"'{answer}' is wrong answer ;(. Correct was 'yes'.")
-                return print(f"Let's try again, {name}!")
-            print('Correct!')
-            good_result += 1
-            if good_result == 3:
-                return print(f"Congratulations, {name}!")
-        elif is_prime(primer) is False:
-            if answer != 'no':
-                print(f"'{answer}' is wrong answer ;(. Correct was 'no'.")
-                return print(f"Let's try again, {name}!")
-            print('Correct!')
-            good_result += 1
-            if good_result == 3:
-                return print(f"Congratulations, {name}!")
+        if is_prime(primer) and answer != 'yes':
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
+            return print(f"\nLet's try again, {name}!")
+        elif is_prime(primer) is False and answer != 'no':
+            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
+            return print(f"\nLet's try again, {name}!")
+        print('Correct!')
+        good_result += 1
+        if good_result == 3:
+            return print(f"Congratulations, {name}!")
 
 
 def main():
-    prime()
+    game_is_prime()
 
 
 if __name__ == '__main__':

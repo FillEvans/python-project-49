@@ -2,34 +2,47 @@
 import prompt
 from brain_games.scripts.brain_games import welcome
 from brain_games.cli import welcome_user
+import random
 
 
 welcome()
+name = welcome_user()[1]
 
 
 def calc():
-    name = welcome_user()[1]
-    print('What is the result of expression?')
-    print('Question: 4 + 10')
-    answer_1 = prompt.integer('Your answer: ')
-    if answer_1 != 14:
-        print(f"'{answer_1}' is wrong answer ;(. Correct answer was '14'.")
-        return print(f"Let's try again, {name}!")
-    print('Correct!\nQuestion: 25 - 11')
-    answer_2 = prompt.integer('Your answer: ')
-    if answer_2 != 14:
-        print(f"'{answer_2}' is wrong answer ;(. Correct was '14'.")
-        return print(f"Let's try again, {name}!")
-    print('Correct!\nQuestion: 25 * 7')
-    answer_3 = prompt.integer('Your answer: ')
-    if answer_3 != 175:
-        print(f"'{answer_3}' is wrong answer ;(. Correct was '175'.")
-        return print(f"Let's try again, {name}!")
-    print(f"Correct!\nCongratulations, {name}!")
+    calc = ["+", "-", "*"]
+    num_1 = random.randint(1, 50)
+    num_2 = random.randint(1, 50)
+    operator = random.choice(calc)
+    if operator == '+':
+        result = num_1 + num_2
+    elif operator == '-':
+        result = num_1 - num_2
+    elif operator == '*':
+        result = num_1 * num_2
+    return [result, num_1, num_2, operator]
+
+
+def game_calc():
+    print('What is the result of the expression?')
+    good_result = 0
+    while good_result <= 3:
+        result, num_1, num_2, operator = calc()
+        print(f'Question: {num_1} {operator} {num_2}')
+        answer = prompt.string('Your answer: ')
+        if str(result) == str(answer):
+            print("Correct!")
+            good_result += 1
+            if good_result == 3:
+                return print(f"Congratulations, {name}!")
+        else:
+            print(
+                f"'answer' is wrong answer ;(. Correct answer was '{result}'.")
+            return print(f"\nLet's try again, {name}!")
 
 
 def main():
-    calc()
+    game_calc()
 
 
 if __name__ == '__main__':
