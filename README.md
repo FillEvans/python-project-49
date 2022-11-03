@@ -4,3 +4,4 @@
 [![brain_even.py README](https://asciinema.org/a/FSG0qqtTbeZyXlRrs2nYRn3Mq)]
 [![brain_calc.py README](https://asciinema.org/a/YncF11rQ1YS5O7IylhRe3VMMu)]
 [![brain_gcd.py README](https://asciinema.org/a/9YniWwAnQZWvZxxtYLigL2Xc5)]
+[![brain_prime.py README](https://asciinema.org/a/7g91Bj8LVubcJr1GhYgjPc0hp)]

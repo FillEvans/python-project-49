@@ -11,19 +11,19 @@ def is_even():
     name = welcome_user()[1]
     print('Answer "yes" if the number is even, otherwise answer "no".')
     print('Question: 15')
-    answer1 = prompt.string('Your answer: ')
-    if answer1 != 'no':
-        print(f"'{answer1}' is wrong answer ;(. Correct answer was 'no'.")
+    answer_1 = prompt.string('Your answer: ')
+    if answer_1 != 'no':
+        print(f"'{answer_1}' is wrong answer ;(. Correct answer was 'no'.")
         return print(f"Let's try again, {name}!")
     print('Correct!\nQuestion: 6')
-    answer2 = prompt.string('Your answer: ')
-    if answer2 != 'yes':
-        print(f"'{answer2}' is wrong answer ;(. Correct answer was 'yes'.")
+    answer_2 = prompt.string('Your answer: ')
+    if answer_2 != 'yes':
+        print(f"'{answer_2}' is wrong answer ;(. Correct answer was 'yes'.")
         return print(f"Let's try again, {name}!")
     print('Correct!\nQuestion: 7')
-    answer3 = prompt.string('Your answer: ')
-    if answer3 != 'no':
-        print(f"'{answer3}' is wrong answer ;(. Correct answer was 'no'.")
+    answer_3 = prompt.string('Your answer: ')
+    if answer_3 != 'no':
+        print(f"'{answer_3}' is wrong answer ;(. Correct answer was 'no'.")
         return print(f"Let's try again, {name}!")
     print(f'Correct!\nCongratulations, {name}!')
 
