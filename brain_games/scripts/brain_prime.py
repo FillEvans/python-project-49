@@ -22,7 +22,6 @@ def is_prime(n):
     else:
         return False
 
-    
 
 def prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
@@ -39,7 +38,7 @@ def prime():
             good_result += 1
             if good_result == 3:
                 return print(f"Congratulations, {name}!")
-        elif is_prime(primer) == False:
+        elif is_prime(primer) is False:
             if answer != 'no':
                 print(f"'{answer}' is wrong answer ;(. Correct was 'no'.")
                 return print(f"Let's try again, {name}!")
@@ -47,7 +46,6 @@ def prime():
             good_result += 1
             if good_result == 3:
                 return print(f"Congratulations, {name}!")
-    
 
 
 def main():
