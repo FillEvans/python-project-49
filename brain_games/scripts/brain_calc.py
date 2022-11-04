@@ -37,7 +37,7 @@ def game_calc():
                 return print(f"Congratulations, {name}!")
         else:
             print(
-                f"'answer' is wrong answer ;(. Correct answer was '{result}'.")
+                f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
             return print(f"\nLet's try again, {name}!")
 
 
