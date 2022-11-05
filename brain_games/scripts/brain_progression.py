@@ -10,7 +10,7 @@ name = welcome_user()[1]
 
 
 def game_progression():
-    print('What number is missing in the progression?')
+    print('What number is missing in the progression? ')
     good_result = 0
     while good_result <= 3:
         stop = randint(20, 50)
