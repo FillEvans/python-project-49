@@ -10,27 +10,27 @@ name = welcome_user()[1]
 
 
 def game_progression():
-    print('What number is missing in the progression? ')
+    print('What number is missing in the progression?')
     good_result = 0
-    while good_result <= 3:
+    while True:
         stop = randint(20, 50)
         step = randint(1, 5)
         result = list(range(randint(0, 9), stop, step))[0: 5]
         answer = str(result[randint(0, 4)])
         result = " ".join(map(str, (result)))
         printer = result.replace(answer, "..", 1)
-        print(f"Question: {printer}")
-        answer_1 = prompt.integer('Your answer: ')
-        if int(answer) != answer_1:
-            return print(
-                f"'{answer_1}' is wrong answer ;(. Correct answer was"
-                f"\'{answer}\'."
-                f"\nLet's try again, {name}!")
-        else:
-            print('Correct!')
+        print(f'Question: {printer}')
+        text = input('Your answer: ')
+        if text == answer:
             good_result += 1
+            print('Correct!')
             if good_result == 3:
-                return print(f"Congratulations, {name}!")
+                return print(f'Congratulations, {name}!')
+        elif text != answer:
+            return print(
+                f'\'{text}\' is wrong answer ;(. Correct answer was'
+                f'\'{answer}\'.'
+                f'\nLet\'s try again, {name}!')
 
 
 def main():
