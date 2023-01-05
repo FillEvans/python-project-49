@@ -8,4 +8,4 @@ How to use brain_calc
 How to use brain_gcd
 <a href=https://asciinema.org/a/9YniWwAnQZWvZxxtYLigL2Xc5></a>
 How to use brain_prime
-[![asciicast](https://asciinema.org/a/7g91Bj8LVubcJr1GhYgjPc0hp)
+[![asciicast](https://asciinema.org/a/7g91Bj8LVubcJr1GhYgjPc0hp.svg)](https://asciinema.org/a/7g91Bj8LVubcJr1GhYgjPc0hp)
