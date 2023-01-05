@@ -3,7 +3,7 @@
 ### Level 1 project on Hexlet, program [Python developer](https://ru.hexlet.io/programs/python).
 
 
-### Hexlet tests and linter status:
+### Hexlet tests status:
 [![Actions Status](https://github.com/FillEvans/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/FillEvans/python-project-49/actions)
 
 ### Code Climate maintainability status
@@ -12,7 +12,7 @@
 ## Installation:
 
 ```sh
-pip install --user git+https://github.com/FillEvans/python-project-lvl1.git
+pip install --user git+https://github.com/FillEvans/python-project-49.git
 ```
 
 ### How to use brain_even
